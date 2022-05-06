@@ -67,11 +67,7 @@
       <Variable x:TypeArguments="x:Int32" Name="sum" />
       <Variable x:TypeArguments="x:Int32" Name="value1" />
       <Variable x:TypeArguments="x:Int32" Name="value2" />
-      <Variable x:TypeArguments="x:Int32" Name="counter">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="counter" />
       <Variable x:TypeArguments="sd:DataTable" Name="sumDT" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -127,7 +123,7 @@
                         <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(row(1).ToString)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign DisplayName="Assign Sum  the value in the Two colmns" sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_3">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[sum]</OutArgument>
                       </Assign.To>
