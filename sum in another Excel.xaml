@@ -91,7 +91,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadRange AddHeaders="False" DataTable="[sumDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="434,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Sample Columns.xlsx">
+            <ui:ReadRange AddHeaders="False" DataTable="[sumDT]" DisplayName="Read Range Sample columns Data" sap:VirtualizedContainerService.HintSize="434,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Sample Columns.xlsx">
               <ui:ReadRange.Range>
                 <InArgument x:TypeArguments="x:String">
                   <Literal x:TypeArguments="x:String" Value="" />
@@ -134,7 +134,7 @@
                         <InArgument x:TypeArguments="x:Int32">[column1+column2]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:WriteCell Cell="[&quot;A&quot;+counter.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,114.666666666667" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[column3.ToString]" WorkbookPath="sum.xlsx" />
+                    <ui:WriteCell Cell="[&quot;A&quot;+counter.ToString]" DisplayName="Write Cell to another Sum Excel File" sap:VirtualizedContainerService.HintSize="334,114.666666666667" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[column3.ToString]" WorkbookPath="sum.xlsx" />
                     <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_4">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
